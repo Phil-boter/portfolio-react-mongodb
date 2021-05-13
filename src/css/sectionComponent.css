@@ -1,0 +1,29 @@
+.section {
+    /* border: 1px solid yellow; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-contact {
+    background-color: white;
+    padding: 2rem;
+}
+.about {
+    background-color: white;
+    padding: 2rem;
+}
+.link-github {
+    color: rgb(199, 0, 0);
+    /* text-shadow: 0.2px 0.2px 0.2px black; */
+}
+.link-linkedIn {
+    color: blue;
+}
+.link-cv {
+    color: rgb(0, 109, 109);
+}
+.link-mailto {
+    color: green;
+}
