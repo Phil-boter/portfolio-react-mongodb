@@ -23,7 +23,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
+    background-color: var(--var-color_white);
 }
 
 .single-project-header-container {
@@ -34,7 +34,7 @@
 }
 
 .single-project-header {
-    background-color: rgb(218, 38, 205);
+    background-color: var(--var-color_projectHeader);
     font-weight: 800;
     color: black;
     font-size: 5rem;

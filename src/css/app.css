@@ -1,7 +1,11 @@
 :root {
-    --var-color-one: #0ff;
+    --var-color_one: #0ff;
     --var-color_two: #030303;
     --var-color_three: #ffffee;
+    --var-color_gray: rgb(247, 247, 247);
+    --var-color_green: #00ff96;
+    --var-color_white: white;
+    --var-color_black: black;
 }
 
 * {
@@ -14,7 +18,7 @@
 }
 
 .body-main-container {
-    background-color: rgb(240, 240, 240);
+    background-color: var(--var-color_gray);
     max-width: 1980px;
     margin: 0 auto;
 }
@@ -35,7 +39,7 @@ button {
 }
 
 button:hover {
-    color: white;
+    color: var(--var-color_white);
     background-color: black;
 }
 .bg-active {

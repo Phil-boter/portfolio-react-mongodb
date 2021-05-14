@@ -2,7 +2,7 @@
 
 .navigation {
     /* border: 3px solid yellow; */
-    background-color: var(--var-color-one);
+    background-color: var(--var-color_one);
     position: sticky;
     top: 0;
     width: 100%;
@@ -36,7 +36,7 @@
 }
 .navigation-title a {
     display: flex;
-    color: white;
+    color: var(--var-color_white);
     font-size: 2rem;
     font-weight: 600;
     padding: 1rem;
@@ -58,7 +58,7 @@
     /* animation: slide-in infinite; */
 }
 #link:hover {
-    color: white;
+    color: var(--var-color_white);
     z-index: 100 !important;
 }
 
@@ -78,11 +78,11 @@
 }
 
 .bg_slider {
-    --initialTextColor: white;
-    --slideTextColor: black;
+    --initialTextColor: var(--var-color_white);
+    --slideTextColor: var(--var-color_black);
 
     --initialBgColor: transparent;
-    --slideBgColor: black;
+    --slideBgColor: var(--var-color_black);
 
     color: var(--initialTextColor);
 
@@ -120,7 +120,7 @@
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: var(--var-color_white);
     margin: 6px 0;
     transition: 0.5s;
 }

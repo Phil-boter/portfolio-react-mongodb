@@ -2,7 +2,7 @@ export default function AboutSection({ initialState }) {
     return (
         <>
             <section className="section about">
-                <article>
+                <article className="about-article">
                     I am a junior full stack web developer with a background in
                     foodindustry and automotive service. I began my professional
                     career with an apprenticeship as a brewer, where I

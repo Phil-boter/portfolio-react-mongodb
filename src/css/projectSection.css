@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-around;
     min-height: 100vh;
-    background-color: white;
+    background-color: var(--var-color_white);
 }
 
 .toggle-link {
@@ -51,6 +51,6 @@
     }
 
     .article-main-container {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--var-color_black);
     }
 }
