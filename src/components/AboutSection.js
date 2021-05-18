@@ -1,4 +1,4 @@
-export default function AboutSection({ initialState }) {
+export default function AboutSection() {
     return (
         <>
             <section className="section about">

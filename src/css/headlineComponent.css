@@ -1,0 +1,24 @@
+.headline-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--var-color_white);
+    margin-top: -2.2rem;
+    padding-bottom: 0rem;
+}
+
+.headline {
+    background-color: var(--var-color_headline) !important;
+    padding-left: 2rem;
+}
+.video {
+    width: 100%;
+    height: 52vh;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 850px) {
+    .video {
+        height: 100vh;
+    }
+}

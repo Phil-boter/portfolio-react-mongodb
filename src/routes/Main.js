@@ -45,7 +45,7 @@ export default function Main({ setIsVisible, visible }) {
                 initialState={initialState}
             />
             <div className=" section image-container">
-                <img id="main-image" src="/assets/tour640.jpg" alt="main" />
+                <img id="main-image" src="/assets/marzahnMed.jpg" alt="main" />
             </div>
             <ProjectShort initialState={initialState} />
             <Footer />

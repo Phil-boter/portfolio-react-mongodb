@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
+import HeadlineComponent from "../components/HeadlineComponent";
 
 export default function About({ setIsVisible, visible }) {
     const initialState = {
@@ -11,6 +12,7 @@ export default function About({ setIsVisible, visible }) {
         header2: "",
         sectionHeader: "about",
         location: "about",
+        image: "/assets/heideKlein.jpg",
         links: [
             {
                 id: 0,
@@ -42,7 +44,7 @@ export default function About({ setIsVisible, visible }) {
                 visible={visible}
                 initialState={initialState}
             />
-
+            <HeadlineComponent initialState={initialState} />
             <AboutSection initialState={initialState} />
             <Footer />
             <ScrollToTopButton />

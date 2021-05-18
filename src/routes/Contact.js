@@ -4,6 +4,7 @@ import ContactSection from "../components/ContactSection";
 import Navigation from "../components/Navigation";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Footer from "../components/Footer";
+import HeadlineComponent from "../components/HeadlineComponent";
 
 export default function Contact({ setIsVisible, visible }) {
     const initialState = {
@@ -11,6 +12,7 @@ export default function Contact({ setIsVisible, visible }) {
         header2: "",
         sectionHeader: "contact",
         location: "contact",
+        image: "/assets/mohnKlein.jpg",
         links: [
             {
                 id: 0,
@@ -42,8 +44,8 @@ export default function Contact({ setIsVisible, visible }) {
                 visible={visible}
                 initialState={initialState}
             />
-
-            <ContactSection />
+            <HeadlineComponent initialState={initialState} />
+            <ContactSection initialState={initialState} />
             <Footer />
             <ScrollToTopButton />
         </>

@@ -3,6 +3,7 @@
 .navigation {
     /* border: 3px solid yellow; */
     background-color: var(--var-color_one);
+    /* background-color: transparent; */
     position: sticky;
     top: 0;
     width: 100%;

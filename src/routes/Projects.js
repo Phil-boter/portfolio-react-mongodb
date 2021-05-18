@@ -4,6 +4,7 @@ import ProjectsSection from "../components/ProjectsSection";
 import Navigation from "../components/Navigation";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Footer from "../components/Footer";
+import HeadlineComponent from "../components/HeadlineComponent";
 
 export default function Projects({ setIsVisible, visible }) {
     const initialState = {
@@ -11,6 +12,7 @@ export default function Projects({ setIsVisible, visible }) {
         header2: "",
         sectionHeader: "projects",
         location: "projects",
+        video: "/assets/stechlinsee.av1.mp4",
         links: [
             {
                 id: 0,
@@ -42,6 +44,7 @@ export default function Projects({ setIsVisible, visible }) {
                 visible={visible}
                 initialState={initialState}
             />
+            <HeadlineComponent initialState={initialState} />
             <ProjectsSection
                 setIsVisible={setIsVisible}
                 visible={visible}
