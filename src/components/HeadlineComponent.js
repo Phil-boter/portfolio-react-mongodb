@@ -6,7 +6,7 @@ export default function HeadlineComponent({ initialState }) {
         <>
             <div className="headline-container">
                 {initialState.video ? (
-                    <video className="video" loop autoPlay muted>
+                    <video className="video" loop muted autoPlay>
                         <source src={initialState.video} type="video/mp4" />
                         <source src={initialState.video} type="video/ogg" />
                         Your browser does not support the video tag.

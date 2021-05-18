@@ -9,11 +9,11 @@
 
 .headline {
     background-color: var(--var-color_headline) !important;
-    padding-left: 2rem;
+    margin-left: 1rem !important;
 }
 .video {
     width: 100%;
-    height: 52vh;
+    height: 55vh;
     object-fit: cover;
 }
 
