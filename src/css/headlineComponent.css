@@ -3,7 +3,7 @@
     justify-content: center;
     flex-direction: column;
     background-color: var(--var-color_white);
-    margin-top: -2.2rem;
+    margin-top: -1.3rem;
     padding-bottom: 0rem;
 }
 
@@ -13,8 +13,14 @@
 }
 .video {
     width: 100%;
-    height: 55vh;
+    height: 65vh;
     object-fit: cover;
+}
+
+@media only screen and (orentation: landscape) {
+    .video {
+        height: 65vh;
+    }
 }
 
 @media only screen and (max-width: 850px) {
