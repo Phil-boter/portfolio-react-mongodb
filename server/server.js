@@ -4,10 +4,10 @@ const cors = require("cors");
 const compression = require("compression");
 const cookieSession = require("cookie-session");
 const csurf = require("csurf");
-const cryptoRandomString = require("crypto-random-string");
+// const cryptoRandomString = require("crypto-random-string");
 // const multer = require("multer");
 // const uidSafe = require("uid-safe");
-const alert = require("alert");
+// const alert = require("alert");
 
 const app = express();
 
@@ -22,7 +22,7 @@ if (process.env.NODE_ENV == "production") {
 } else {
     secrets = require("../secrets.json"); // in dev they are in secrets.json which is listed in .gitignore
 }
-db = `mongodb+srv://${secrets.MONGO_USER}:${secrets.MONGO_PASS}@cluster0.wglsp.mongodb.net/portfolio?retryWrites=true&w=majority`;
+let db = `mongodb+srv://${secrets.MONGO_USER}:${secrets.MONGO_PASS}@cluster0.wglsp.mongodb.net/portfolio?retryWrites=true&w=majority`;
 //---------------  database setup ---------------------
 
 const mongoose = require("mongoose");

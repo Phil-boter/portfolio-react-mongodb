@@ -4,6 +4,9 @@
     "private": true,
     "main": "server.js",
     "dependencies": {
+        "@react-three/a11y": "^2.1.0",
+        "@react-three/drei": "^7.0.6",
+        "@react-three/fiber": "^7.0.2",
         "@testing-library/jest-dom": "^5.12.0",
         "@testing-library/react": "^11.2.6",
         "@testing-library/user-event": "^12.8.3",
@@ -35,6 +38,7 @@
         "redux-devtools-extension": "^2.13.9",
         "redux-promise": "^0.6.0",
         "redux-thunk": "^2.3.0",
+        "three": "^0.130.0",
         "uid-safe": "^2.1.5",
         "web-vitals": "^1.1.1"
     },

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "../css/NavigationComponent.css";
 import { useState } from "react";
+import ThreeComponent from "./ThreeComponent";
 
 export default function Navigation({ setIsVisible, visible, initialState }) {
     const admin = useSelector((state) => {
@@ -82,7 +83,7 @@ export default function Navigation({ setIsVisible, visible, initialState }) {
                                 <div className="link-container">
                                     {!admin || !admin.id ? (
                                         <>
-                                            {initialState.links.map((link) => (
+                                            {/* {initialState.links.map((link) => (
                                                 <Link
                                                     id="link"
                                                     key={link.id}
@@ -94,7 +95,12 @@ export default function Navigation({ setIsVisible, visible, initialState }) {
                                                 >
                                                     {link.text}
                                                 </Link>
-                                            ))}
+                                            ))} */}
+                                            <ThreeComponent
+                                                color={color}
+                                                setIsVisible={setIsVisible}
+                                                visible={visible}
+                                            />
                                         </>
                                     ) : (
                                         <>
