@@ -104,7 +104,7 @@ export default function ThreeComponent({ color, visible, setIsVisible }) {
                 <Plane
                     receiveShadow
                     rotation={[-Math.PI / 2, 0, 0]}
-                    position={[1.5, -1.9, 1.9]}
+                    position={[1.3, -1.9, 1.9]}
                     args={[1.8, 1.8]}
                     opacity={0.1}
                 >

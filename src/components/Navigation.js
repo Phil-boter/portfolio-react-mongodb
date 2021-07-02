@@ -4,6 +4,56 @@ import "../css/NavigationComponent.css";
 import { useState } from "react";
 import ThreeComponent from "./ThreeComponent";
 
+function NavigationMainComponent({
+    initialState,
+    adḿin,
+    color,
+    setIsVisible,
+    visible,
+}) {
+    const admin = useSelector((state) => {
+        return state.admin;
+    });
+
+    if (!admin || !admin.id) {
+        if (window.outerWidth <= 650) {
+            return initialState.links.map((link) => (
+                <Link
+                    id="link"
+                    key={link.id}
+                    to={`${link.page}`}
+                    onClick={() => setIsVisible(false)}
+                    className="bg_slider link"
+                >
+                    {link.text}
+                </Link>
+            ));
+        } else {
+            return (
+                <ThreeComponent
+                    color={color}
+                    setIsVisible={setIsVisible}
+                    visible={visible}
+                />
+            );
+        }
+    } else {
+        return (
+            <>
+                <Link to="/manageProjects">
+                    <div className="navigation-link">Add Project</div>
+                </Link>
+                <Link to="/manageProjects">
+                    <div className="navigation-link">Add Administrator</div>
+                </Link>
+                <Link to="/logout">
+                    <div className="navigation-link">Logout</div>
+                </Link>
+            </>
+        );
+    }
+}
+
 export default function Navigation({ setIsVisible, visible, initialState }) {
     const admin = useSelector((state) => {
         return state.admin;
@@ -81,46 +131,13 @@ export default function Navigation({ setIsVisible, visible, initialState }) {
                                     </Link>
                                 </p>
                                 <div className="link-container">
-                                    {!admin || !admin.id ? (
-                                        <>
-                                            {/* {initialState.links.map((link) => (
-                                                <Link
-                                                    id="link"
-                                                    key={link.id}
-                                                    to={`${link.page}`}
-                                                    onClick={() =>
-                                                        setIsVisible(false)
-                                                    }
-                                                    className="bg_slider link"
-                                                >
-                                                    {link.text}
-                                                </Link>
-                                            ))} */}
-                                            <ThreeComponent
-                                                color={color}
-                                                setIsVisible={setIsVisible}
-                                                visible={visible}
-                                            />
-                                        </>
-                                    ) : (
-                                        <>
-                                            <Link to="/manageProjects">
-                                                <div className="navigation-link">
-                                                    Add Project
-                                                </div>
-                                            </Link>
-                                            <Link to="/manageProjects">
-                                                <div className="navigation-link">
-                                                    Add Administrator
-                                                </div>
-                                            </Link>
-                                            <Link to="/logout">
-                                                <div className="navigation-link">
-                                                    Logout
-                                                </div>
-                                            </Link>
-                                        </>
-                                    )}
+                                    <NavigationMainComponent
+                                        initialState={initialState}
+                                        admin={admin}
+                                        visible={visible}
+                                        setIsVisible={setIsVisible}
+                                        color={color}
+                                    />
                                 </div>
                                 <label className="login-logo">
                                     <Link to="/login">A</Link>
