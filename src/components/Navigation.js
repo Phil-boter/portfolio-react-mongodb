@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "../css/NavigationComponent.css";
-import { useState } from "react";
 import ThreeComponent from "./ThreeComponent";
+import useColorGenerator from "../hooks/useColorGenerator";
 
 function NavigationMainComponent({
     initialState,
@@ -58,7 +58,13 @@ export default function Navigation({ setIsVisible, visible, initialState }) {
         return state.admin;
     });
 
-    const [color, setColor] = useState("");
+    const [color, randomBackgroundColor] = useColorGenerator("");
+
+    const handleClick = () => {
+        setIsVisible(true);
+        randomBackgroundColor();
+    };
+
     const styles = {
         style1: {
             transform: "rotate(45deg) translate(10.5px, 7.5px)",
@@ -76,17 +82,6 @@ export default function Navigation({ setIsVisible, visible, initialState }) {
             backgroundColor: { color },
         },
     };
-
-    function randomBackgroundColor() {
-        console.log("click");
-        setIsVisible(true);
-        var x = Math.floor(Math.random() * 256);
-        var y = Math.floor(Math.random() * 256);
-        var z = Math.floor(Math.random() * 256);
-        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-        console.log(bgColor);
-        setColor(bgColor);
-    }
 
     return (
         <>
@@ -146,7 +141,7 @@ export default function Navigation({ setIsVisible, visible, initialState }) {
                     </>
                 ) : (
                     <div
-                        onClick={() => randomBackgroundColor()}
+                        onClick={() => handleClick()}
                         className="navigation-burger top-main"
                     >
                         <div className="burger bar1"></div>
