@@ -17,6 +17,10 @@
     object-fit: cover;
 }
 
+#canvas-container {
+    padding: 2rem;
+}
+
 @media only screen and (orentation: landscape) {
     .video {
         height: 65vh;
@@ -26,5 +30,8 @@
 @media only screen and (max-width: 850px) {
     .video {
         height: 100vh;
+    }
+    #canvas-container {
+        padding: 1rem;
     }
 }

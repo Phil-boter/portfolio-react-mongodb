@@ -6,7 +6,6 @@ import ThreeComponent from "./ThreeComponent";
 
 function NavigationMainComponent({
     initialState,
-    adḿin,
     color,
     setIsVisible,
     visible,
