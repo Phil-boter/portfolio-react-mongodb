@@ -25,8 +25,14 @@ export default function AboutSection() {
                     In this intensive 12 week course I dived into the depths of
                     JavaScript. At Spiced Academy I built my first full stack
                     web applications using third party APIs, frontend frameworks
-                    like React.js and Vue.js and backend like Express. So please
-                    have a look at some of my code on{" "}
+                    like React.js and Vue.js and backend like Express. After
+                    graduating from the Spiced Academy, I completed the web
+                    development career path at CodeCademy. <br />
+                    Since I personally want to develop myself further and
+                    development for mobile devices is becoming more and more
+                    important, I started developing my first apps with
+                    react-native and Google Firebase. So feel free to have a
+                    look at some of my code on{" "}
                     <a
                         className="link-github"
                         href="https://github.com/Phil-boter"
