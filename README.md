@@ -4,14 +4,18 @@ Small portfolio site
 
 ## About
 
-    React-portfolio is a small portfolio site made with React.js for the clientside,
-    Node.js/Express for the serverside and mongodb for the database.
+React-portfolio is a small portfolio site made with React.js for the clientside,
+Node.js/Express for the serverside and mongoDB for the database.
 
-    For this site I used react-three-fiber
+For this site I used react-three-fiber
 
-    // https://docs.pmnd.rs/react-three-fiber/getting-started/introduction //
+// https://docs.pmnd.rs/react-three-fiber/getting-started/introduction //
 
-    the first time. On the one hand for the 3D navigation for desktop devices and on the other hand for the headline-pictures of each section. So three.js is really fun to use!
+the first time.
+On the one hand for the 3D navigation on desktop devices and on the other hand for the headline-pictures
+of each section. So three.js is really fun to use!
+Because of not so good performance and useabilty on mobile devices,
+I decided to use a classic navigation for small screens.
 
 ## Technologies
 
