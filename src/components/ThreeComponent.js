@@ -32,7 +32,7 @@ export default function ThreeComponent({ color, visible, setIsVisible }) {
             <>
                 <RoundedBox
                     args={[1.5, 1.5, 1.5, 1.5]}
-                    position={[-3, 0, -2]}
+                    position={[-2.5, 0, -2]}
                     color="black"
                 >
                     <meshStandardMaterial metalness={1} roughness={0} />
@@ -45,7 +45,7 @@ export default function ThreeComponent({ color, visible, setIsVisible }) {
                 >
                     <Text
                         fontSize={0.4}
-                        position={[-3, 0, -1.2]}
+                        position={[-2.5, 0, -1.2]}
                         color="white"
                         font="https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn&display=swap"
                     >
@@ -55,14 +55,14 @@ export default function ThreeComponent({ color, visible, setIsVisible }) {
                 <Plane
                     receiveShadow
                     rotation={[-Math.PI / 2, 0, 0]}
-                    position={[-3.2, -1.9, -2.4]}
+                    position={[-2.7, -1.9, -2.4]}
                     args={[1.8, 1.8]}
                     opacity={0.1}
                 >
                     <meshStandardMaterial
                         attach="material"
                         color="black"
-                        opacity={0.6}
+                        opacity={0.3}
                     />
                 </Plane>
             </>
@@ -104,14 +104,14 @@ export default function ThreeComponent({ color, visible, setIsVisible }) {
                 <Plane
                     receiveShadow
                     rotation={[-Math.PI / 2, 0, 0]}
-                    position={[1.3, -1.9, 1.9]}
+                    position={[1.3, -1.9, 1.6]}
                     args={[1.8, 1.8]}
                     opacity={0.1}
                 >
                     <meshStandardMaterial
                         attach="material"
                         color="black"
-                        opacity={0.6}
+                        opacity={0.3}
                     />
                 </Plane>
             </>
@@ -153,14 +153,14 @@ export default function ThreeComponent({ color, visible, setIsVisible }) {
                 <Plane
                     receiveShadow
                     rotation={[-Math.PI / 2, 0, 0]}
-                    position={[-0.8, -1.9, -0.4]}
-                    args={[2, 2]}
+                    position={[-0.7, -1.9, -0.4]}
+                    args={[1.8, 1.8]}
                     opacity={0.1}
                 >
                     <meshStandardMaterial
                         attach="material"
                         color="black"
-                        opacity={0.6}
+                        opacity={0.3}
                     />
                 </Plane>
             </>
