@@ -17,6 +17,10 @@ of each section. So three.js is really fun to use!
 Because of not so good performance and useabilty on mobile devices,
 I decided to use a classic navigation for small screens.
 
+You can try it here
+https://philipp-dawid.herokuapp.com
+if you are interested.
+
 ## Technologies
 
     HTML5, CSS3, JavaScript, React.js/Hooks, react-three-fiber, Redux, Node.js/Express, mongoDB
