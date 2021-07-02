@@ -14,7 +14,6 @@ import {
 } from "@react-three/drei";
 
 function ThreeHeadline({ initialState, color }) {
-    console.log("color in three", color);
     function Loader() {
         const { progress } = useProgress();
         return <Html center>{progress} % loaded</Html>;
@@ -26,7 +25,7 @@ function ThreeHeadline({ initialState, color }) {
                 <Canvas
                     style={{
                         backgroundColor: color,
-                        height: "82vh",
+                        height: "75vh",
                     }}
                     shadowMap
                     camera={{ position: [-1, 0, 18], fov: 140 }}
@@ -41,7 +40,7 @@ function ThreeHeadline({ initialState, color }) {
                         <Cloud position={[4, 2, 0]} args={[3, 2]} />
                         <Text
                             fontSize={3}
-                            position={[0, 0, 3]}
+                            position={[0, 0, 5]}
                             color="black"
                             font="https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn&display=swap"
                         >
@@ -58,7 +57,6 @@ function ThreeHeadline({ initialState, color }) {
 
 export default function HeadlineComponent({ initialState }) {
     const [color, randomBackgroundColor] = useColorGenerator("");
-    console.log("color headline three", typeof color);
 
     useEffect(() => {
         randomBackgroundColor();
@@ -66,7 +64,7 @@ export default function HeadlineComponent({ initialState }) {
 
     return (
         <>
-            <div className="headline-container" style={{ height: "100vh" }}>
+            <div className="headline-container" style={{ height: "90vh" }}>
                 {initialState ? (
                     <ThreeHeadline initialState={initialState} color={color} />
                 ) : (
