@@ -25,7 +25,7 @@ function ThreeHeadline({ initialState }) {
                     height: "82vh",
                 }}
                 shadowMap
-                camera={{ position: [-1, 0, 9], fov: 150 }}
+                camera={{ position: [-1, 0, 18], fov: 140 }}
             >
                 <Suspense fallback={<Loader />}>
                     <ambientLight intensity={0.7} />
@@ -37,7 +37,7 @@ function ThreeHeadline({ initialState }) {
                     <Cloud position={[4, 2, 0]} args={[3, 2]} />
                     <Text
                         fontSize={3}
-                        position={[0, 0, 0]}
+                        position={[0, 0, 3]}
                         color="black"
                         font="https://fonts.googleapis.com/css2?family=Montserrat&family=Vollkorn&display=swap"
                     >
