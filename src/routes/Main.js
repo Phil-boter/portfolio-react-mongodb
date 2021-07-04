@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import Footer from "../components/Footer";
 import ProjectShort from "../components/ProjectShort";
+import ThreeDragDrop from "../components/ThreeDragDrop";
 
 import "../css/main.css";
 
@@ -44,8 +45,9 @@ export default function Main({ setIsVisible, visible }) {
                 visible={visible}
                 initialState={initialState}
             />
-            <div className=" section image-container">
-                <img id="main-image" src="/assets/marzahnMed.jpg" alt="main" />
+            <div className="section image-container">
+                {/* <img id="main-image" src="/assets/marzahnMed.jpg" alt="main" /> */}
+                <ThreeDragDrop />
             </div>
             <ProjectShort initialState={initialState} />
             <Footer />

@@ -1,7 +1,5 @@
 .container {
-    width: 100%;
-    height: 100vh;
-    background-color: darkgray;
+    background-color: transparent;
 }
 /* keep single Avatar pieces together */
 .avatarWrap {
@@ -11,7 +9,6 @@
     transform: translate(-50%, -50%);
     width: 250px;
     height: 356px;
-    background-color: #fdf4e3;
 }
 
 .headWrap {

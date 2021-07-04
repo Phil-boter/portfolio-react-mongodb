@@ -8,9 +8,16 @@
     background-color: var(--var-color_green);
 }
 .image-container {
-    background-color: var(--var-color_one);
+    background-color: var(--var-color_white);
 }
 
+#canvas {
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+}
+canvas {
+}
 .image-container img {
     /* border: 1px solid yellow; */
     width: 100%;
