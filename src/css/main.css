@@ -17,6 +17,7 @@
     margin: 0 auto;
 }
 canvas {
+    width: 100%;
 }
 .image-container img {
     /* border: 1px solid yellow; */

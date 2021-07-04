@@ -171,7 +171,6 @@ export default function ThreeComponent({ color, visible, setIsVisible }) {
         <div className="navigation-modal">
             <Canvas
                 colorManagement
-                style={{ width: "100%" }}
                 shadowMap
                 camera={{ position: [-1, 0, 9], fov: 90 }}
             >

@@ -20,7 +20,7 @@ function ThreeHeadline({ initialState, color }) {
     }
 
     return (
-        <div id="canvas">
+        <div id="canvas-header">
             {color && (
                 <Canvas
                     style={{
