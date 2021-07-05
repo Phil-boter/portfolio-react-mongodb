@@ -12,7 +12,7 @@ export default function Contact({ setIsVisible, visible }) {
         header2: "",
         sectionHeader: "contact",
         location: "contact",
-        image: "/assets/mohnKlein.jpg",
+        image: "",
         links: [
             {
                 id: 0,

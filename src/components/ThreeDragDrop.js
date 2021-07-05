@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, Suspense } from "react";
+import React, { useEffect } from "react";
 import * as THREE from "three";
-import { Canvas, extend, useThree } from "@react-three/fiber";
+import { extend } from "@react-three/fiber";
 import { DragControls } from "three/examples/jsm/controls/DragControls";
 import { Text } from "troika-three-text";
 

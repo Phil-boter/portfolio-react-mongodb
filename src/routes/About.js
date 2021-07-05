@@ -12,7 +12,7 @@ export default function About({ setIsVisible, visible }) {
         header2: "",
         sectionHeader: "about",
         location: "about",
-        image: "/assets/heideKlein.jpg",
+        image: "",
         links: [
             {
                 id: 0,

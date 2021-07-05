@@ -33,14 +33,20 @@ export default function AboutSection() {
                     important, I started developing my first apps with
                     react-native and Google Firebase. So feel free to have a
                     look at some of my code on{" "}
-                    <a
+                    <span
                         className="link-github"
-                        href="https://github.com/Phil-boter"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={() =>
+                            window.open("https://github.com/Phil-boter")
+                        }
                     >
                         Github
-                    </a>
+                    </span>
+                    {/* <Link
+                        to={{ pathname: "http://github.com/Phil-boter" }}
+                        target="_blank"
+                    >
+                        Github
+                    </Link> */}
                     .
                 </article>
             </section>

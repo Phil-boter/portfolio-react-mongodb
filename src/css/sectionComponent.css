@@ -19,15 +19,23 @@
 .link-github {
     color: rgb(199, 0, 0);
     /* text-shadow: 0.2px 0.2px 0.2px black; */
+    text-decoration: underline;
+    cursor: pointer;
 }
 .link-linkedIn {
     color: blue;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .link-cv {
     color: rgb(0, 109, 109);
+    text-decoration: underline;
+    cursor: pointer;
 }
 .link-mailto {
     color: green;
+    text-decoration: underline;
+    cursor: pointer;
 }
 @media only screen and (max-width: 680px) {
     .about,

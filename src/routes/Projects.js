@@ -12,7 +12,7 @@ export default function Projects({ setIsVisible, visible }) {
         header2: "",
         sectionHeader: "projects",
         location: "projects",
-        video: "/assets/stechlinsee.av1.mp4",
+        video: "",
         links: [
             {
                 id: 0,

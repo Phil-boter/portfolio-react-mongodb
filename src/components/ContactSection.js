@@ -4,41 +4,42 @@ export default function ContactSection() {
             <section className="section section-contact">
                 <article>
                     Find my code and my latest projects on{" "}
-                    <a
+                    <span
                         className="link-github"
-                        href="https://github.com/Phil-boter"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={() =>
+                            window.open("https://github.com/Phil-boter")
+                        }
                     >
                         Github
-                    </a>{" "}
+                    </span>{" "}
                     . If you are interested in my educational background and
                     professional experience visit my{" "}
-                    <a
+                    <span
                         className="link-linkedIn"
-                        href="https://www.linkedin.com/in/philipp-dawid-759793206/"
-                        target="_blank"
-                        rel="noreferrer"
+                        onClick={() =>
+                            window.open(
+                                "https://www.linkedin.com/in/philipp-dawid-759793206/"
+                            )
+                        }
                     >
                         LinkedIn
-                    </a>{" "}
+                    </span>{" "}
                     profile or download my{" "}
-                    <a
-                        href="/assets/CV-ENG.pdf"
-                        download="CV Philipp Dawid"
-                        target="_blank"
-                        rel="noreferrer"
+                    <span
                         className="link-cv"
+                        onClick={() => window.open("/assets/CV-ENG.pdf")}
                     >
                         CV
-                    </a>{" "}
+                    </span>{" "}
                     . Interested in working with me? Feel free to{" "}
-                    <a
+                    <span
                         className="link-mailto"
-                        href="mailto:philipp_dawid@web.de"
+                        onClick={() =>
+                            window.open("mailto:philipp_dawid@web.de")
+                        }
                     >
                         reach out
-                    </a>
+                    </span>
                     .
                 </article>
             </section>

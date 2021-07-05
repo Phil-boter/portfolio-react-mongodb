@@ -118,13 +118,14 @@ export default function SingleProject({ projectId, setIsVisible, visible }) {
                                 <p className="article-body">
                                     You can also look at the code belonging to
                                     the app on{" "}
-                                    <a
-                                        href={project.link}
-                                        target="_blank"
-                                        rel="noreferrer"
+                                    <span
+                                        className="link-github"
+                                        onClick={() =>
+                                            window.open(project.link)
+                                        }
                                     >
                                         Github
-                                    </a>
+                                    </span>
                                     .
                                 </p>
                             </div>
@@ -132,13 +133,14 @@ export default function SingleProject({ projectId, setIsVisible, visible }) {
                                 <div className="article-content">
                                     <p className="article-body">
                                         It is possible to try out the app live{" "}
-                                        <a
-                                            href={project.host}
-                                            target="_blank"
-                                            rel="noreferrer"
+                                        <span
+                                            className="link-linkedIn"
+                                            onClick={() =>
+                                                window.open(project.host)
+                                            }
                                         >
                                             here
-                                        </a>
+                                        </span>
                                         .
                                     </p>
                                 </div>

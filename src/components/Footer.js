@@ -7,37 +7,46 @@ export default function ContactShort() {
         <>
             <section className="section-main-contact">
                 <article>
-                    <a
-                        href="https://github.com/Phil-boter"
-                        target="_blank"
-                        rel="noreferrer"
+                    <span
+                        className="link-linkedIn"
+                        onClick={() =>
+                            window.open("https://github.com/Phil-boter")
+                        }
                     >
                         <img
                             className="arrow"
                             src="/assets/git.png"
                             alt="github"
                         />
-                    </a>
+                    </span>
 
-                    <a
-                        href="https://www.linkedin.com/in/philipp-dawid-759793206/"
-                        target="_blank"
-                        rel="noreferrer"
+                    <span
+                        className="link-linkedIn"
+                        onClick={() =>
+                            window.open(
+                                "https://www.linkedin.com/in/philipp-dawid-759793206/"
+                            )
+                        }
                     >
                         <img
                             className="arrow"
                             src="/assets/linkedIn.png"
                             alt="linkedIn"
                         />
-                    </a>
+                    </span>
 
-                    <a href="mailto:philipp_dawid@web.de">
+                    <span
+                        className="link-linkedIn"
+                        onClick={() =>
+                            window.open("mailto:philipp_dawid@web.de")
+                        }
+                    >
                         <img
                             className="arrow"
                             src="/assets/mail.png"
                             alt="mail"
                         />
-                    </a>
+                    </span>
                 </article>
                 <Link to="/contact">
                     <button>get in Contact</button>
