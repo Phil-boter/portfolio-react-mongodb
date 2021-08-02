@@ -11,6 +11,7 @@ import {
     useProgress,
     Cloud,
     Text,
+    Plane,
 } from "@react-three/drei";
 
 function ThreeHeadline({ initialState, color }) {
@@ -31,6 +32,7 @@ function ThreeHeadline({ initialState, color }) {
                     camera={{ position: [-1, 0, 18], fov: 140 }}
                 >
                     <Suspense fallback={<Loader />}>
+                        <fog attach="fog" args={[color, 0, 20]} />
                         <ambientLight intensity={0.7} />
                         <directionalLight color="white" position={[3, 0, 5]} />
                         <Cloud position={[-4, -2, 0]} args={[3, 2]} />
@@ -46,7 +48,17 @@ function ThreeHeadline({ initialState, color }) {
                         >
                             {initialState.header.toUpperCase()}
                         </Text>
-
+                        <Plane
+                            rotation-x={-Math.PI / 2}
+                            position={[0, -10, 0]}
+                            args={[1000, 1000, 10, 10]}
+                        >
+                            <meshBasicMaterial
+                                // attach="material"
+                                opacity={1}
+                                color={color}
+                            />
+                        </Plane>
                         <OrbitControls autoRotate />
                     </Suspense>
                 </Canvas>

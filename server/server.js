@@ -4,6 +4,7 @@ const cors = require("cors");
 const compression = require("compression");
 const cookieSession = require("cookie-session");
 const csurf = require("csurf");
+const wakeUpDyno = require("./middleware/wakeUpDyno");
 // const cryptoRandomString = require("crypto-random-string");
 // const multer = require("multer");
 // const uidSafe = require("uid-safe");
@@ -84,6 +85,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 const PORT = process.env.PORT || 5000;
+const DYNO_URL = "https://philipp-dawid.herokuapp.com";
 app.listen(PORT, () => {
+    wakeUpDyno(DYNO_URL);
     console.log(`app listening on port http://localhost:${PORT}`);
 });
